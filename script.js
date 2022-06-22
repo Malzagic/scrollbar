@@ -19,4 +19,12 @@ const showScrollHeight = () => {
   }
 }
 
+const scrollUp = () => {
+  window.scroll({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
+
 window.addEventListener('scroll', showScrollHeight);
+scrollToTop.addEventListener('click', scrollUp);
